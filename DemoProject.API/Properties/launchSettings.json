@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "DemoProject.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "LoggerSink": "console"
+      },
+      "applicationUrl": "http://localhost:5028",
+      "dotnetRunMessages": true
+    }
+  }
+}

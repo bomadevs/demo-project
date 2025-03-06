@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DemoProject.API</name>
+    </assembly>
+    <members>
+        <member name="T:DemoProject.API.Controllers.AdminController">
+            <summary>
+            Holds Admin endpoints. Should be using authentication and authorization.
+            </summary>
+        </member>
+        <member name="T:DemoProject.DemoProject.API.Controllers.CompaniesController">
+            <summary>
+            Holds our endpoints for the companies.
+            </summary>
+        </member>
+    </members>
+</doc>

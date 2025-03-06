@@ -1,0 +1,14 @@
+/.clj-kondo
+/.lsp
+/.vs
+/DemoProject.API/bin
+/DemoProject.API/obj
+/DemoProject.Application/bin
+/DemoProject.Application/obj
+/DemoProject.Domain/obj
+/DemoProject.Infrastructure/bin
+/DemoProject.Infrastructure/obj
+/DemoProject.UnitTests/bin
+/DemoProject.UnitTests/obj
+/obj
+/DemoProject.Domain/bin

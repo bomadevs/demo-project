@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DemoProject.Infrastructure</name>
+    </assembly>
+    <members>
+        <member name="T:DemoProject.Infrastructure.MockDB.AppDbContext">
+            <summary>
+            Simulated database context for in-memory storage.
+            This context is used to mock a database
+            </summary>
+        </member>
+        <member name="P:DemoProject.Infrastructure.MockDB.AppDbContext.FreeServiceCompanies">
+            <summary>
+            Represents a collection of free service companies, simulating a database table...
+            </summary>
+        </member>
+        <member name="P:DemoProject.Infrastructure.MockDB.AppDbContext.PremiumServiceCompanies">
+            <summary>
+            Represents a collection of premium service companies, simulating a database table...
+            </summary>
+        </member>
+        <member name="P:DemoProject.Infrastructure.MockDB.AppDbContext.Verifications">
+            <summary>
+            Represents a collection of verification data, simulating a database table...
+            </summary>
+        </member>
+        <member name="F:DemoProject.Infrastructure.Services.DataService._dbContext">
+            <summary>
+            Our mocked database context.
+            </summary>
+        </member>
+        <member name="F:DemoProject.Infrastructure.Services.DataService._cache">
+            <summary>
+            Memory cache for storing data. Simulates a real distributed cache.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:DemoProject.Infrastructure.Services.DataService._cacheDuration" -->
+        <member name="M:DemoProject.Infrastructure.Services.DataService.GetFreeCompaniesByIdAsync(System.String,System.Nullable{System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.DataService.GetPremiumCompaniesByIdAsync(System.String,System.Nullable{System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.DataService.GetVerificationByIdAsync(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.DataService.SeedDataAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.DataService.StoreVerificationDataAsync(DemoProject.Domain.Entities.VerificationData)">
+            <inheritdoc />
+        </member>
+        <member name="T:DemoProject.Infrastructure.Services.FailureSimulationService">
+            <inheritdoc />
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.FailureSimulationService.ShouldFail(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="T:DemoProject.Infrastructure.Services.IDataService">
+            <summary>
+            Defines methods for retrieving and managing company data.
+            This interface supports fetching both free and premium companies with filtering,
+            along with verification data.
+            </summary>
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.IDataService.GetFreeCompaniesByIdAsync(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Retrieves a list of free service companies with filtering by company id.
+            Data is cached to optimize performance.
+            </summary>
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.IDataService.GetPremiumCompaniesByIdAsync(System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Retrieves a list of premium service companies with filtering by company id.
+            Data is cached to optimize performance.
+            </summary>
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.IDataService.SeedDataAsync">
+            <summary>
+            Seeds the mocked DB with initial data from JSON files...
+            </summary>
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.IDataService.GetVerificationByIdAsync(System.Guid)">
+            <summary>
+            Retrieves verification data based on verificationId from DB.
+            Could be another service also...
+            </summary>
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.IDataService.StoreVerificationDataAsync(DemoProject.Domain.Entities.VerificationData)">
+            <summary>
+            Store verification data in DB.
+            Just return simple true if data is stored successfully...
+            </summary>
+        </member>
+        <member name="T:DemoProject.Infrastructure.Services.IFailureSimulationService">
+            <summary>
+            Service to simulate intermittent failures in API responses...
+            </summary>
+        </member>
+        <member name="M:DemoProject.Infrastructure.Services.IFailureSimulationService.ShouldFail(System.Int32)">
+            <summary>
+            Determines whether the request should fail with a 503 error.
+            </summary>
+        </member>
+    </members>
+</doc>

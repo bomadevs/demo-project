@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DemoProject.Application</name>
+    </assembly>
+    <members>
+        <member name="M:DemoProject.Application.DTOs.MappingProfile.#ctor">
+            <summary>
+            Define our mappings between entities and DTOs here...
+            </summary>
+        </member>
+        <member name="M:DemoProject.Application.Handlers.BackendServiceHandler.StoreVerificationData(DemoProject.Application.DTOs.BackendServiceResponse)">
+            <summary>
+            Stores verification data into the DB
+            </summary>
+        </member>
+        <member name="M:DemoProject.Application.Handlers.BackendServiceHandler.FormatResponse(DemoProject.Application.Mediator.ApiResponseResult,DemoProject.Application.Requests.BackendServiceRequest)">
+            <summary>
+            Converts API responses into BackendServiceResponse
+            </summary>
+        </member>
+        <member name="T:DemoProject.Application.Mediator.ApiControllerBase">
+            <summary>
+            Base class for all API controllers, that will share common behavior.
+            </summary>
+        </member>
+        <member name="T:DemoProject.Application.Mediator.Error">
+            <summary>
+            Common error class to be used in the application.
+            </summary>
+        </member>
+        <member name="T:DemoProject.Application.Mediator.HandlerResult`1">
+            <summary>
+            Handler result class for the mediator pattern.
+            </summary>
+        </member>
+        <member name="T:DemoProject.Application.Mediator.IApiDataResponse">
+            <summary>
+            Interface for API data response.
+            </summary>
+        </member>
+        <member name="T:DemoProject.Application.Mediator.IApiResponse">
+            <summary>
+            Interface for all API responses.
+            </summary>
+        </member>
+        <member name="T:DemoProject.Application.Requests.BackendServiceRequest">
+            <summary>
+            Request to the backend service used in medaitor pattern, will be sent to the proper handler.
+            </summary>
+        </member>
+        <member name="T:DemoProject.Application.Requests.FreeThirdPartyRequest">
+            <summary>
+            Request to get data from a free third-party service, will be handled by FreeThirdPartyHandler, by
+            using mediator.
+            </summary>
+        </member>
+        <member name="T:DemoProject.Application.Requests.PremiumThirdPartyRequest">
+            <summary>
+            Request to get premium third-party data.
+            </summary>
+        </member>
+        <member name="T:DemoProject.Application.Requests.VerificationRequest">
+            <summary>
+            Request to get verification data.
+            </summary>
+        </member>
+        <member name="T:DemoProject.Application.Validators.BackendServiceRequestValidator">
+            <summary>
+            Adds validation for backend-service endpoint payload request.
+            </summary> 
+        </member>
+        <member name="T:DemoProject.Application.Validators.VerificationRequestValidator">
+            <summary>
+            Adds validation rules for the VerificationRequest.
+            </summary>
+        </member>
+    </members>
+</doc>
